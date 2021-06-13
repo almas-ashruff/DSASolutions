@@ -8,7 +8,7 @@ using namespace std;
 
 // https://leetcode.com/problems/merge-intervals/
 
-// Solution -
+// Solution - O(nLogn) time
 
 
 vector<vector<int>> merge(vector<vector<int>>& intervals) {
