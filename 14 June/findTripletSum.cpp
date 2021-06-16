@@ -30,4 +30,4 @@ bool find3Numbers(int array[], int n, int t)
         }
     }
     return false;
-}
+    }
