@@ -2,11 +2,14 @@
 using namespace std;
 
 // ALGOEXPERT HARD QUESTION
-
+// https://www.algoexpert.io/questions/Min%20Number%20Of%20Jumps
 
 // SOLN. 1
 // Min number of jumps to reach a place = min of current number of jumps 
-// and number of jumps to reach from another another position
+// ... and number of jumps to reach from another another position
+
+// O(n^2) time and O(n) space
+
 int minNumberOfJumps(vector<int> array){
     vector<int> jumps(array.size(), INT_MAX);
     jumps[0] = 0;
@@ -14,7 +17,7 @@ int minNumberOfJumps(vector<int> array){
     for(int i = 1; i < array.size(); i++){
         for(int j = 0; j < i; j++){
             if(array[j] > i - j){
-                jumps[i] = min(array[j] + 1, jumps[i]));
+                jumps[i] = min(jumps[j] + 1, jumps[i]));
             }
         }
     }
@@ -30,6 +33,7 @@ int minNumberOfJumps(vector<int> array){
 // add new value of step.
 //return jump + 1
 
+// O(n) time and O(1) space
 
 int minNumberOfJumps(vector<int> array){
     if(array.size() == 1){

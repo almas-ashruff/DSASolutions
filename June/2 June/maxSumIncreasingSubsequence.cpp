@@ -2,12 +2,15 @@
 using namespace std;
 
 // ALGOEXPERT HARD QUESTION
+// https://www.algoexpert.io/questions/Max%20Sum%20Increasing%20Subsequence
 
 vector<vector<int>> buildSequence(vector<int> array, vector<int> sequences, int currentIdx, int sum);
 
 vector<vector<int>> maxSumIncreasingSubsequence(vector<int> array){
     vector<int> sequences(array.size(), INT_MIN);
+    // stores the index of the last value that got added to the current index for the max sum
     vector<int> sums = array;
+    // stores the max sum of the subsequence for the current index
     int maxSumIdx = 0;
 
     for(int i = 0; i < array.size(); i++){

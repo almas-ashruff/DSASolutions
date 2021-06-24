@@ -2,10 +2,12 @@
 using namespace std;
 
 // ALGOEXPERT HARD QUESTION
-// Move right to left and put a value one greater than the previous value,
-// when a value greater than the orevious value is found.
-// Move left to right anf put the value which is maximum between
-// current value at the index and the value of the (index + 1) plus 1 when the value is greater than the next value
+// https://www.algoexpert.io/questions/Min%20Rewards
+
+// Move left to right and put a value one greater than the previous value,
+// ... when a value greater than the previous value is found.
+// Move right to left and put the value which is maximum between
+// ... current value at the index and the value of the (index + 1) plus 1 when the value is greater than the next value
 
 
 int minRewards(vector<int> scores){

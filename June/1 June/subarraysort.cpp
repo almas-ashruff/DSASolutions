@@ -2,10 +2,14 @@
 using namespace std;
 
 // ALGOEXPERT HARD QUESTION
+// https://www.algoexpert.io/questions/Subarray%20Sort
+
+
 // TO FIND THE NECESSARY RANGE, FIND THE MINIMUM AND MAXIMUM VALUES
-// IN THE RANGE OF NUMBERS THAT ARE OUT OF ORDER.
+// ... IN THE RANGE OF NUMBERS THAT ARE OUT OF ORDER.
 // THE CORRECT POSITION OF THOSE TWO NUMBERS IS THE RANGE OF INDICES OUT OF ORDER.
 
+bool isOutOfOrder(int idx, int num, vector<int> array);
 
 vector<int> subarraySort(vector<int> array){
     int minOutOfOrder = INT_MAX;
@@ -30,12 +34,20 @@ vector<int> subarraySort(vector<int> array){
         subarrayLeftIdx++;
     }
     while(maxOutOfOrder <= array[subarrayRightIdx]){
-        subarrayRightIdx--
+        subarrayRightIdx--;
     }
 
-    return vector<int> {subarrayLeftIdx, subarra}
+    return vector<int> {subarrayLeftIdx, subarraRightIdx};
 }
 
 bool isOutOfOrder(int idx, int num, vector<int> array){
+    if(idx == 0){
+        return num > array[idx + 1];
+    }
 
+    if(idx == array.size() - 1){
+        return num < array[idx - 1];
+    }
+
+    return num < array[idx - 1] || num > array[idx + 1];
 }
