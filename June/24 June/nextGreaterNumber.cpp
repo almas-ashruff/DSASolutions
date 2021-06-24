@@ -7,7 +7,7 @@ using namespace std;
 // as the lowest possible order (i.e., sorted in ascending order).
 
 
-// https://leetcode.com/problems/next-permutation/
+//https://practice.geeksforgeeks.org/problems/next-permutation5226/1
 // https://www.youtube.com/watch?v=LuLCLgMElus
 
 // Solution -
@@ -17,25 +17,26 @@ using namespace std;
 // 3. Swap values at index k and index l.
 // 4. Reverse the value from after index k till the end. This will SORT the array from after index k,
 //     and will give the first permutation of the array after the given permutation.
-void nextPermutation(vector<int>& nums) {
-    int n = nums.size();
+
+vector<int> nextPermutation(int n, vector<int> arr){
     int k, l;
+    
     for(k = n - 2; k >= 0; k--) {
-        if(nums[k] < nums[k + 1]) {
+        if(arr[k] < arr[k + 1] ) {
             break;
         }
     }
     
     if(k < 0) {
-        reverse(nums.begin(), nums.end());
+        reverse(arr.begin(), arr.end());
     } else {
         for(l = n - 1; l > k; l--) {
-            if(nums[l] > nums[k]) {
+            if(arr[l] > arr[k]) {
                 break;
             }
-        } 
-        swap(nums[k], nums[l]);
-        reverse(nums.begin() + k + 1, nums.end());
+        }
+        swap(arr[l], arr[k]);
+        reverse(arr.begin() + k + 1, arr.end());
     }
+    return arr;
 }
-
