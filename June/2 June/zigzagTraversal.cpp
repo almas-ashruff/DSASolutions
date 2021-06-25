@@ -3,6 +3,7 @@ using namespace std;
 
 // ALGOEXPERT HARD QUESTION
 // Self explanatory
+// https://www.algoexpert.io/questions/Zigzag%20Traverse
 
 bool outOfBounds(int row, int col, int height, int width);
 

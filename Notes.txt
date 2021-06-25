@@ -1,10 +1,1 @@
-Why are strings immutable ?
-
-https://www.geeksforgeeks.org/java-string-is-immutable-what-exactly-is-the-meaning/
-In the String constant pool, a String object is likely to have one or many references. If several references point to same String without even knowing it, it would be bad if one of the references modified that String value. That’s why String objects are immutable.
-
-Well, now you could say, what if someone overrides the functionality of String class? That’s the reason that the String class is marked final so that nobody can override the behavior of its methods.
-
-
-
-1 << n = 2^N
+https://www.geeksforgeeks.org/implementation-of-tic-tac-toe-game/

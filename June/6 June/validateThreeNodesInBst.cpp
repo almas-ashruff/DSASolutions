@@ -4,6 +4,7 @@ using namespace std;
 // ALGOEXPERT HARD QUESTION
 // To check that out of three nodes, for one, the other two are ancestors and decendents
 
+// https://www.algoexpert.io/questions/Validate%20Three%20Nodes
 
 // SOLUTION 1 
 // check if node one is descendant of two, if yes, check if node two is descendant of three
