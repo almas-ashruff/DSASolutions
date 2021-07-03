@@ -10,6 +10,8 @@ using namespace std;
 // check if node one is descendant of two, if yes, check if node two is descendant of three
 // check if node three is descendant of two, if yes, check is two is descendant of one
 // else return false
+
+// O(H) time o(1) space
 bool isDescendant(BST *node, BST *target);
 
 bool validateThreeNodes(BST *nodeOne, BST *nodeTwo, BST *nodeThree){
@@ -39,6 +41,8 @@ bool isDescendant(BST *node, BST *target){
 // Else -
 // Check which node found node two, and from node two, find the remaining edge node (one or three)
 // if the edge node is found, return true, else false
+// O(d) time O(1) space, d = distance between nodes
+
 
 bool searchForTarget(BST *node, BST *target);
 
