@@ -2,6 +2,8 @@
     "files.associations": {
         "vector": "cpp",
         "iterator": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "__functional_03": "cpp",
+        "functional": "cpp"
     }
 }
