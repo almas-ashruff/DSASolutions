@@ -26,6 +26,8 @@ int search(int arr[], int n, int x, int k)
         // We use max here to make sure that i
         // moves at-least one step ahead.
         i = i + max(1, abs(arr[i]-x)/k);
+        // we are dividing by k to get the least number of steps required to 
+        // ... reach the possible match index.
     }
     return -1;
 }
