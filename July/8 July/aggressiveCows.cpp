@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// WATCH - https://www.youtube.com/watch?v=wSOfYesTBRk
+// WATCH - https://www.youtube.com/watch?v=wSOfYesTBRk  https://www.youtube.com/watch?v=SiE1XFhYoaA
+// variant of binary search
 
 int aggressiveCows(vector<int> a, int c) {
     sort(a, a + n);
