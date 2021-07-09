@@ -3,6 +3,7 @@
 // you need to tell whether 'B' exists in the arithmetic sequence or not.
 
 // https://practice.geeksforgeeks.org/problems/arithmetic-number2815/1
+//  IMPORTANT - READ SOLUTIONS : https://www.geeksforgeeks.org/find-the-missing-number-in-unordered-arithmetic-progression/
 
 #include <bits/stdc++.h>
 using namespace std;
