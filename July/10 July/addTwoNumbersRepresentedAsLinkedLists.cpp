@@ -7,8 +7,7 @@
 // AlgoExpert Solution
 using namespace std;
 
-LinkedList *sumOfLinkedLists(LinkedList *linkedListOne,
-                             LinkedList *linkedListTwo) {
+LinkedList *sumOfLinkedLists(LinkedList *linkedListOne, LinkedList *linkedListTwo) {
   LinkedList *newListHead = new LinkedList(0);
 	LinkedList *currentNode = newListHead;
 	int carry = 0;
