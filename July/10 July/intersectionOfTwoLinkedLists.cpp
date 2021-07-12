@@ -7,7 +7,6 @@
 
 int intersectPoint(Node* head1, Node* head2)
 {
-    
     Node *nodeOne = head1, *nodeTwo = head2;
     if(head1 == NULL || head2 == NULL) 
         return -1;
