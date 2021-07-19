@@ -19,12 +19,14 @@ vector<int> reverseLevelOrder(Node *root) {
         queue.pop();
         stack.push(temp -> data);
         
-        if(temp -> right) {
+        if(temp -> right) { 
             queue.push(temp -> right);
+            // right is pushed first because order will be reversed in stack
         }
         
         if(temp -> left) {
             queue.push(temp -> left);
+            // left is pushed second
         }
     }
     
