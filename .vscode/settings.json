@@ -15,6 +15,7 @@
         "bitset": "cpp",
         "initializer_list": "cpp",
         "unordered_map": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "ios": "cpp"
     }
 }
