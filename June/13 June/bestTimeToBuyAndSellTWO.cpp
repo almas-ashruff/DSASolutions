@@ -8,6 +8,7 @@ using namespace std;
 
 
 // https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1#
+
 vector<vector<int> > stockBuySell(vector<int> array, int n){
     vector<vector<int>> result;
     

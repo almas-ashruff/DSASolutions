@@ -5,7 +5,7 @@ using namespace std;
 // SOLUTION 1
 
 // Kinda like D.P.
-// Max for a given position = max of (previous sum + current value) 
+// Max for a given position = max of (current value, previous sum + current value) 
 
 // If a negative number is encountered, if the mod of negative number is bigger than
 // the current sum so far before the negative number, then the subarray is reset. Else

@@ -40,6 +40,8 @@ int maxProfit(vector<int> &prices) {
         dp[i] = max(dp[i + 1], maxVal - prices[i]); 
         // maximum profit till a current index is the maximum of the previous index,
         // and the difference of the maximum value and the current share price.
+
+        // BASICALLY, MAX PROFIT TILL NOW IF COMPULSORY MIN BUYING DATE WAS TODAY
     }
 
 
@@ -51,6 +53,8 @@ int maxProfit(vector<int> &prices) {
         dp[i] = max(dp[i - 1], dp[i] + (prices[i] - minVal));
         // maximum profit is the max of profit till previous index, and the current profit from 
         // the previous iteration plus the difference of the current price and minimum price before the current index.
+
+        // BASICALLY, MAX PROFIT TILL NOW IF COMPULSORY MAX SELLING DATE WAS TODAY
     }
     return dp[n - 1];
 }

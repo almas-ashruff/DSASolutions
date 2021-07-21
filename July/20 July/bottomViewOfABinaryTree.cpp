@@ -1,7 +1,7 @@
-Given a binary tree, print the bottom view from left to right.
-A node is included in bottom view if it can be seen when we look at the tree from bottom.
+// Given a binary tree, print the bottom view from left to right.
+// A node is included in bottom view if it can be seen when we look at the tree from bottom.
 
-https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1#
+// https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1#
 
 vector <int> bottomView(Node *root) {
     map<int, vector<int>> map;
