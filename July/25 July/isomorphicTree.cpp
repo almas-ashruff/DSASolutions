@@ -14,19 +14,22 @@ bool isIsomorphic(Node *root1,Node *root2)
 {
     if(!root1 && !root2) {
         return true;
-    }
+    } // if both roots are absent, true
     
     if((root1 && !root2) || (!root1 && root2)) {
         return false;
-    }
+    } // if only one root is absent and the other root is present
     
     if(root1 -> data != root2 -> data) {
         return false;
-    }
+    } // if the data of the two roots is not the same 
     
     return (isIsomorphic(root1 -> left, root2 -> left) 
     && isIsomorphic(root1 -> right, root2 -> right)) 
     || (isIsomorphic(root1 -> right, root2 -> left) 
     && isIsomorphic(root1 -> left, root2 -> right));
     
+
+    // pair the children in the same order and by swapping. 
+    // If the ans is still true, return true
 }

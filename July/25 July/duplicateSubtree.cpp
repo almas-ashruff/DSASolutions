@@ -3,6 +3,13 @@
 
 // https://practice.geeksforgeeks.org/problems/duplicate-subtrees/1#
 
+
+// Serialization of a tree
+// Store every subtree of size > 2 in the map
+// If the count of any such subtree is 2, return true
+// If node is absent, put a $
+
+
 string helper(Node *root, vector<Node *> &ans) {
     if(!root) {
         return "$";
