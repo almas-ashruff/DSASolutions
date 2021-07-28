@@ -17,6 +17,7 @@
         "unordered_map": "cpp",
         "utility": "cpp",
         "ios": "cpp",
-        "__node_handle": "cpp"
+        "__node_handle": "cpp",
+        "memory": "cpp"
     }
 }

@@ -3,6 +3,8 @@
 
 // https://practice.geeksforgeeks.org/problems/merge-k-sorted-arrays/1#
 
+// https://www.geeksforgeeks.org/merge-k-sorted-arrays/
+
 typedef pair<int, pair<int,int>> idx;
 // p.first --> element value
 // p.second.first --> index on parent array -> row
