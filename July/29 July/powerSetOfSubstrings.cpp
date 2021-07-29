@@ -3,13 +3,12 @@
 
 // https://practice.geeksforgeeks.org/problems/power-set4302/1#
 
-void generatePossibleStrings(string str, vector<string> &res, int index = 0, string curr = "")
-{
-    if(index == str.size())
-    {
-        if(curr != "")
-        {
-            res.push_back(curr);
+void generatePossibleStrings(string str, vector<string> &res, int index = 0, string curr = "") {
+    if(index == str.size()) {
+    // if index reaches the end 
+        if(curr != "")  { 
+        // if we have a string
+            res.push_back(curr); // push the string in the ans
         }
         
         return;
@@ -17,6 +16,7 @@ void generatePossibleStrings(string str, vector<string> &res, int index = 0, str
     
     generatePossibleStrings(str, res, index + 1, curr); 
     // recurse to create without char at index
+    
     generatePossibleStrings(str, res, index + 1, curr + str[index]);
     // recurse to create string with chat at index (concat str[index] to curr)
 }
