@@ -14,7 +14,7 @@ int countFriendsPairings(int n)
     if(n < 3) {
         return n;
     }
-    vector<long long int> dp(n + 1, 0);
+    vector<long long int> dp(n + 1, 0)longe;
     dp[1] = 1;
     dp[2] = 2;
     
