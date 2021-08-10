@@ -18,6 +18,8 @@
         "utility": "cpp",
         "ios": "cpp",
         "__node_handle": "cpp",
-        "memory": "cpp"
+        "memory": "cpp",
+        "algorithm": "cpp",
+        "limits": "cpp"
     }
 }
